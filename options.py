@@ -56,7 +56,7 @@ def unpack(obj, packs):
     options_now = packs['packs'][packs['current']]['options']
     bits = bytes_to_bits(base64.urlsafe_b64decode(encoded.encode()))
     result_then = {opt: bit for opt, bit in zip(options_then, bits)}
-    return {opt: result_then.get(opt) or False for opt in options_now}
+    return json.dumps({opt: result_then.get(opt) or False for opt in options_now})
 
 
 if __name__ == '__main__':
