@@ -1,3 +1,16 @@
+⚠️ Not recommended ⚠️
+---------------------
+
+The design here is not super well thought-out. I don't know if a perfect alternative for the original goals exist, but something like [msgpack](https://msgpack.org/) is probably closer than this.
+
+Incomplete list of someother better options in no particular order:
+
+- [protocol buffers](https://en.wikipedia.org/wiki/Protocol_Buffers)
+- [cap'n'proto](https://capnproto.org/)
+- [thrift](https://thrift.apache.org/)? maybe?
+- [asn.1](https://en.wikipedia.org/wiki/ASN.1), even
+
+
 optionpack
 ==========
 
